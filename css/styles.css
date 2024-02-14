@@ -1,0 +1,60 @@
+:root {
+    --marked-color: #008cff;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+}
+
+#patterns {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 50px;
+}
+
+#input-pattern td {
+    cursor: pointer;
+}
+
+#input-pattern td:hover {
+    background-color: var(--marked-color);
+}
+
+.marked {
+    background-color: var(--marked-color);
+}
+
+table, tr, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td {
+    height: 32px;
+    width: 32px;
+}
+
+button, select {
+    border: 1px solid gray;
+    padding: 0 1em;
+    height: 30px;
+}
+
+button {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+}

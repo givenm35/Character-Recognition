@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Character Recognition using Template Matching</title>
+</head>
+<body>
+<header>
+    <h1>Character Recognition using Template Matching</h1>
+</header>
+<main>
+    <div id="patterns">
+        <div>
+            <h4>Input Pattern</h4>
+            <table>
+                <tbody id="input-pattern"></tbody>
+            </table>
+        </div>
+        <div>
+            <h4>Output Pattern</h4>
+            <table>
+                <tbody id="output-pattern"></tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <div>
+            <button onclick="trainInput()">Train input</button>
+            <button onclick="clearGrid()">Clear grid</button>
+            <button onclick="resetNetwork()">Reset network</button>
+        </div>
+        <br>
+        <div>
+            <select id="error-allowed">
+                <option value="0" selected>0% error</option>
+                <option value="5">5% error</option>
+                <option value="10">10% error</option>
+                <option value="15">15% error</option>
+                <option value="20">20% error</option>
+                <option value="25">25% error</option>
+            </select>
+            <button onclick="recognizeInput()">Recognize input</button>
+        </div>
+    </div>
+</main>
+<footer>
+    Developed by Lesley E. Lafen (21901004) & Given M. Moono (21902126)
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
